@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Horarios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Registrar Estudiante</h1>
+    <form id="estFormulario">
+        <label>Código: <input type="text" id="estCodigo" required></label><br>
+        <label>Nombre: <input type="text" id="estNombre" required></label><br>
+        <label>Carrera: <input type="text" id="estCarrera" required></label><br>
+        <input type="submit" value="Registrar Estudiante">
+    </form>
+
+    <h1>Registrar Curso</h1>
+    <form id="cursoFormulario">
+        <label>Código: <input type="text" id="cursoCodigo" required></label><br>
+        <label>Nombre: <input type="text" id="cursoNombre" required></label><br>
+        <label>Especialidad: <input type="text" id="cursoEspecialidad" required></label><br>
+        <label>Duración: <input type="text" id="cursoDuracion" required></label><br>
+        <label>Créditos: <input type="text" id="cursoCreditos" required></label><br>
+        <input type="submit" value="Registrar Curso">
+    </form>
+
+    <h1>Registrar Horario</h1>
+    <form id="horarioFormulario">
+        <label>Código del Curso: <input type="text" id="horarioCursoCodigo" required></label><br>
+        <label>Código del Estudiante: <input type="text" id="horarioEstudianteCodigo" required></label><br>
+        <label>Día: <input type="text" id="horarioDia" required></label><br>
+        <label>Hora de Inicio: <input type="text" id="horarioHoraInicio" required></label><br>
+        <label>Hora de Fin: <input type="text" id="horarioHoraFin" required></label><br>
+        <input type="submit" value="Registrar Horario">
+    </form>
+
+    <h1>Listas</h1>
+    <h2>Estudiantes</h2>
+    <table id="listaEstudiantes" border="1">
+        <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Carrera</th>
+            <th>Modificar</th>
+        </tr>
+    </table>
+
+    <h2>Cursos</h2>
+    <table id="listaCursos" border="1">
+        <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Especialidad</th>
+            <th>Duración</th>
+            <th>Créditos</th>
+            <th>Modificar</th>
+        </tr>
+    </table>
+
+    <h2>Horarios</h2>
+    <table id="listaHorarios" border="1">
+        <tr>
+            <th>Código del Curso</th>
+            <th>Código del Estudiante</th>
+            <th>Día</th>
+            <th>Hora de Inicio</th>
+            <th>Hora de Fin</th>
+            <th>Modificar</th>
+        </tr>
+    </table>
+
+    <button id="modEstudianteButton">Modificar Estudiante</button>
+    <button id="modCursoButton">Modificar Curso</button>
+    <button id="modHorarioButton">Modificar Horario</button>
+
+
+    <button id="eliEstudianteButton">Eliminar Estudiante</button>
+    <button id="eliCursoButton">Eliminar Curso</button>
+    <button id="eliHorarioButton">Eliminar Horario</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
